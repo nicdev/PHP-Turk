@@ -12,7 +12,7 @@ for missing operations, please do so through GitHub.
 SETUP
 =====
 
-Set up the initial 4 variables in pturk.php. 
+Set up the initial 5 variables in pturk.php. 
 Include the pturk.php file in your script.
 
 

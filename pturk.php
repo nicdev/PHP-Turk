@@ -28,8 +28,10 @@ class pturk {
 		
 		private $service_name = 'AWSMechanicalTurkRequester';
 		private $service_version = '2008-08-02';
-		private $secret_access_key = 'vMed69+cThXEjPeCKqRwnnf0C+lkHRzJN30J+Fij';
-		private $access_key = 'AKIAJWZYB5UW5P33D3UA';
+		private $secret_access_key = '';
+		private $access_key = '';
+		private $amazon_url = 'http://mechanicalturk.sandbox.amazonaws.com'; //Sandbox
+		//private $amazon_url = 'http://mechanicalturk.amazonaws.com/'; //Production
 		
 	/**
 	 * Insantiate a new PTurk.
@@ -106,7 +108,7 @@ class pturk {
 				}		
 								
 		 		// Construct the request
-	     		$url = 'http://mechanicalturk.sandbox.amazonaws.com?Service=AWSMechanicalTurkRequester&AWSAccessKeyId='
+	     		$url = $amazon_url.'?Service=AWSMechanicalTurkRequester&AWSAccessKeyId='
 	     				 .urlencode($this->access_key)
 						 .'&Version='.urlencode($this->service_version)
 						 .'&Operation='.urlencode($operation)
