@@ -1,0 +1,25 @@
+PHPTurk is a library to facilitate the use of the Amazon Mechanical Turk 
+web service in PHP. The library itself is a wrapper for the REST API.
+
+For a list of operations available through the REST API see 
+http://docs.amazonwebservices.com/AWSMturkAPI/2008-08-02/
+The initial release has a very limited feature set, but provides the 
+structure for creating functions for every operation offered by Amazon. 
+
+If you'd like to contribute by improving the code, or creating functions 
+for missing operations, please do so through GitHub.
+
+SETUP
+=====
+
+Set up the initial 4 variables in pturk.php. 
+Include the pturk.php file in your script.
+
+
+HISTORY
+=======
+
+2/12/2010 - Initial release
+
+
+
