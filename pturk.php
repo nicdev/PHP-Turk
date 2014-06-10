@@ -108,7 +108,7 @@ class pturk {
 				}		
 								
 		 		// Construct the request
-	     		$url = $amazon_url.'?Service=AWSMechanicalTurkRequester&AWSAccessKeyId='
+	     		$url = $this->amazon_url.'?Service=AWSMechanicalTurkRequester&AWSAccessKeyId='
 	     				 .urlencode($this->access_key)
 						 .'&Version='.urlencode($this->service_version)
 						 .'&Operation='.urlencode($operation)
@@ -153,7 +153,7 @@ class pturk {
     
     /**
      * Encryption routine, hmac_sha1. This one was taken literally from the examples found here http://docs.amazonwebservices.com/AWSMechanicalTurkGettingStartedGuide/2006-10-31/MakingARequest.html
-     * @copyright Amazon Mechanical Turk Getting Started Guide (API Version 2006-10-31) Copyright © 2006 Amazon Web Services LLC or its affiliates. All rights reserved. 
+     * @copyright Amazon Mechanical Turk Getting Started Guide (API Version 2006-10-31) Copyright ï¿½ 2006 Amazon Web Services LLC or its affiliates. All rights reserved. 
      *
      */
     
@@ -167,7 +167,7 @@ class pturk {
 
 	/**
 	 * Generate signature. This one was taken literally from the examples found here http://docs.amazonwebservices.com/AWSMechanicalTurkGettingStartedGuide/2006-10-31/MakingARequest.html
-	 * @copyright Amazon Mechanical Turk Getting Started Guide (API Version 2006-10-31) Copyright © 2006 Amazon Web Services LLC or its affiliates. All rights reserved. 
+	 * @copyright Amazon Mechanical Turk Getting Started Guide (API Version 2006-10-31) Copyright ï¿½ 2006 Amazon Web Services LLC or its affiliates. All rights reserved. 
 	 *
 	 */
 	
